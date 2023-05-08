@@ -3,6 +3,7 @@ import css from './Last-style.module.css';
 import Image from 'next/image';
 import logo from '../../public/last/logo.svg';
 import phone from '../../public/last/phone.png';
+import Privilege from '../privilege/Privilege';
 
 const Last = () => {
     return (
@@ -29,6 +30,7 @@ const Last = () => {
                             </div>
                         </div>
                     </div>
+                    <Privilege/>
                 </div>
             </div>
         </div>
