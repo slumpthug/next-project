@@ -1,5 +1,8 @@
 .container {
     padding: 70px 100px;
+}
+
+.form__container {
     display: flex;
     justify-content: space-between;
     column-gap: 25px;
@@ -103,7 +106,7 @@
 }
 
 @media (max-width: 1420px) {
-    .container {
+    .form__container {
         flex-direction: column;
         align-items: center;
         row-gap: 25px;
