@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../../components/header/Header'
 import First from '../../components/first/First'
+import Brands from '../../components/brands/Brands'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Header/>
       <First/>
+      <Brands/>
     </>
   )
 }
