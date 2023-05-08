@@ -3,7 +3,7 @@ import css from './Decorcomp-style.module.css';
 import Privilege from '../privilege/Privilege';
 import Image from 'next/image';
 import cdek from '../../public/basket/cdek.svg';
-// import MainButtonTwo from '../main-button-two/MainButtonTwo';
+import MainButtonTwo from '../main-button-two/MainButtonTwo';
 import boots from '../../public/basket/boots.png';
 
 
@@ -88,7 +88,7 @@ const Decorcomp = () => {
                                 <p>Оплата осуществляется курьеру СДЭК картой или наличными. <span>Оплата после примерки.</span></p>
                             </div>
                         </div>
-                        {/* <MainButtonTwo text='ПОДТВЕРДИТЬ заказ'/> */}
+                        <MainButtonTwo text='ПОДТВЕРДИТЬ заказ'/>
                     </div>
                 </div>
                 <Privilege/>

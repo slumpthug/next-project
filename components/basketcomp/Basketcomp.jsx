@@ -6,7 +6,7 @@ import ticket from '../../public/basket/ticket.svg';
 import boots from '../../public/basket/boots.png';
 import close from '../../public/basket/close.svg';
 import cdek from '../../public/basket/cdek.svg';
-// import MainButtonTwo from '../main-button-two/MainButtonTwo';
+import MainButtonTwo from '../main-button-two/MainButtonTwo';
 
 const Basketcomp = () => {
     return (
@@ -76,7 +76,7 @@ const Basketcomp = () => {
                                 <span>Доставка в случае отказа <br/> 1 500 руб.</span>
                             </div>
                         </div>
-                        {/* <MainButtonTwo text='оформить заказ'/> */}
+                        <MainButtonTwo text='оформить заказ'/>
                     </div>
                 </div>
                 <Privilege/>
