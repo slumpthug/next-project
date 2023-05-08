@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../../components/header/Header'
 import First from '../../components/first/First'
 import Brands from '../../components/brands/Brands'
+import Collection from '../../components/colllection/Collection'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Header/>
       <First/>
       <Brands/>
+      <Collection/>
     </>
   )
 }
