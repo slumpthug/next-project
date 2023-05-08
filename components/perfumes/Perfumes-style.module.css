@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfume_left {
+    padding: 70px 110px;
+    width: 100%;
+    height: 800px;
+    background: url('../../public/perfumes/perfume.jpg') no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.perfume_left button:first-child {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    border-radius: 72px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.perfume_left button:first-child:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.perfume_right {
+    padding: 70px 110px;
+    width: 100%;
+    height: 800px;
+    background: url('../../public/perfumes/perfumetwo.jpg') no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.perfume_right button:first-child {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    border: 1px solid #333333;
+    border-radius: 72px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.perfume_right button:first-child:hover {
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+.perfumes__title h2 {
+    font-weight: 300;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.perfumes__title button {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.perfumes__title button span {
+    position: relative;
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.perfumes__title button span:hover {
+    color: #000;
+}
+
+.perfumes__title button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: width .5s, height .5s;
+}
+
+.perfumes__title button:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        justify-content: initial;
+    }
+}
+
+@media (max-width: 600px) {
+    .perfume_left {
+        padding: 30px;
+        height: 500px;
+    }
+
+    .perfume_right {
+        padding: 30px;
+        height: 500px;
+    }
+    
+    .perfumes__title h2 {
+        font-size: 24px;
+    }
+}

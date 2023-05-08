@@ -4,6 +4,7 @@ import First from '../../components/first/First'
 import Brands from '../../components/brands/Brands'
 import Collection from '../../components/colllection/Collection'
 import Novelties from '../../components/novelties/Novelties'
+import Perfumes from '../../components/perfumes/Perfumes'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Brands/>
       <Collection/>
       <Novelties/>
+      <Perfumes/>
     </>
   )
 }
