@@ -1,7 +1,11 @@
 .container {
     padding: 70px 100px;
+}
+
+.product__container {
     display: flex;
     column-gap: 30px;
+    margin-bottom: 40px;
 }
 
 .product__slider {
@@ -188,7 +192,7 @@
 }
 
 @media (max-width: 1300px) {
-    .container {
+    .product__container {
         align-items: center;
         flex-direction: column;
         row-gap: 30px;
