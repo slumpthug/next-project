@@ -1,0 +1,17 @@
+.container {
+    padding: 15px 140px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    border-bottom: 1px solid #000000;
+}
+
+.container a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #969696;
+}
+
+.container a:first-child {
+    color: #333333;
+}
