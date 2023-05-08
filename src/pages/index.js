@@ -6,6 +6,7 @@ import Collection from '../../components/colllection/Collection'
 import Novelties from '../../components/novelties/Novelties'
 import Perfumes from '../../components/perfumes/Perfumes'
 import Promotion from '../../components/promotion/Promotion'
+import Last from '../../components/last/Last'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Novelties/>
       <Perfumes/>
       <Promotion/>
+      <Last/>
     </>
   )
 }
