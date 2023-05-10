@@ -41,6 +41,7 @@ const Promotion = () => {
                             //         slidesPerView: 2,
                             //     },
                             // }}
+                            speed={1500}
                             grabCursor={true}
                             preventClicks={true}
                             modules={[Autoplay]}

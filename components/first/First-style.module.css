@@ -16,10 +16,6 @@
     background-size: cover;
     background-position: center;
 }
-
-/* .man_part:hover {
-    box-shadow: 20px #000000 inset;
-} */
  
 .woman_part {
     display: flex;
