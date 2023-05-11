@@ -8,7 +8,7 @@ const basket = () => {
     return (
         <div>
             <Header/>
-            <BottomHeader/>
+            <BottomHeader text='Корзина'/>
             <Basketcomp/>
             <Footer/>
         </div>

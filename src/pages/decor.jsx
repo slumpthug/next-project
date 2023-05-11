@@ -8,7 +8,7 @@ const decor = () => {
     return (
         <div>
             <Header/>
-            <BottomHeader/>
+            <BottomHeader text='ОФОРМЛЕНИЕ'/>
             <Decorcomp/>
             <Footer/>
         </div>
