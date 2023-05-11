@@ -10,6 +10,12 @@
     row-gap: 15px;
     text-align: center;
 }
+.errors{
+    color: red;
+    font-size: 14px;
+}
+
+
 
 .last__title p {
     width: 700px;
@@ -86,11 +92,12 @@
 
 .last__inputs {
     display: flex;
+    gap: 10px;
     align-items: center;
 }
 
 .last__inputs input {
-    width: 300px;
+    width: 330px;
     padding: 15px 20px;
     font-weight: 500;
     font-size: 14px;
