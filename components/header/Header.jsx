@@ -18,11 +18,11 @@ const Header = () => {
                 </a>
                 <input placeholder='Поиск по продукции' className={css.search}></input>
                 <div className={css.links__container}>
-                    <a className={css.user_link} href='#'>
+                    <a className={css.user_link} href='/decor'>
                         <Image className={css.box} src={box} alt="box" />
                         <span>Доставка</span>
                     </a>
-                    <a className={css.user_link} href='#'>
+                    <a className={css.user_link} href='/basket'>
                         <Image className={css.basket} src={basket} alt="basket" />
                         <span>Корзина</span>
                     </a>

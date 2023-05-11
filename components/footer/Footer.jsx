@@ -36,14 +36,14 @@ const Footer = () => {
                     <div className={css.footer__address}>
                         <div>
                             <h6>Офис в России</h6>
-                            <a href='#'>Москва, Кутузовский пр. 2 <br/> Санкт-Петербург, Большой проспект П.С. 13</a>
+                            <a href='https://go.2gis.com/gy5cq'>Москва, Кутузовский пр. 2 <br/> Санкт-Петербург, Большой проспект П.С. 13</a>
                         </div>
                         <Image className={css.label} src={label} alt="label" />
                     </div>
                     <div className={css.footer__address}>
                         <div>
                             <h6>Офис в Италии</h6>
-                            <a href='#'>Milano, Via Manzoni 23</a>
+                            <a href='https://go.2gis.com/gy5cq'>Milano, Via Manzoni 23</a>
                         </div>
                         <Image className={css.label} src={label} alt="label" />
                     </div>
