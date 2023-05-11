@@ -28,8 +28,6 @@ const Last = () => {
         } else if (!/^\d{10}$/.test(formData.phone.trim())) {
             errors.phone = 'Введите корректный номер телефона (10 цифр без пробелов и дефисов)';
         }
-
-        
         return errors;
     };
 
@@ -82,7 +80,7 @@ const Last = () => {
                                 оформите подписку на рассылку INTEFRA
                             </h2>
                             <form onSubmit={handleSubmit} className={css.last__inputs}>
-                                <div  className={css.input_and_error}>
+                                <div className={css.input_and_error}>
                                     <input type="text" placeholder='Имя'
                                         name="name"
                                         value={formData.name}
