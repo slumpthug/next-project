@@ -48,7 +48,7 @@ const Collection = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <MainButton text="смотреть больше" />
+                <MainButton link='/assemblage' text="смотреть больше" />
             </div>
         </div>
     );
