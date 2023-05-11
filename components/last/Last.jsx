@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from 'react';
 import css from './Last-style.module.css';
 import Image from 'next/image';
@@ -63,7 +62,7 @@ const Last = () => {
 
 
     return (
-        <div className={css.last}>
+        <div  className={css.last}>
             <div className={css.container}>
                 <div className={css.last__title}>
                     <Image className={css.logo} src={logo} alt="logo" />

@@ -8,7 +8,7 @@ import telegram from '../../public/footer/telegram.svg';
 
 const Footer = () => {
     return (
-        <div className={css.footer}>
+        <div id='1' className={css.footer}>
             <div className={css.container}>
                 <div className={css.footer__info}>
                     <Image className={logo} src={logo} alt="companys logo"/>
