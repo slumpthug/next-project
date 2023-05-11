@@ -1,11 +1,11 @@
 import React from 'react';
 import css from './MainButtonTwo-style.module.css';
 
-const MainButtonTwo = ({text}) => {
+const MainButtonTwo = ({text, link}) => {
     return (
-        <button className={css.mainButtonTwo}>
+        <a href={link} className={css.mainButtonTwo}>
             {text}
-        </button>
+        </a>
     );
 };
 

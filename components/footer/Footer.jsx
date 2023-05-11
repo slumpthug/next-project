@@ -48,10 +48,10 @@ const Footer = () => {
                         <Image className={css.label} src={label} alt="label" />
                     </div>
                     <div className={css.footer__socials}>
-                        <a href="#">
+                        <a href="https://www.instagram.com/">
                             <Image className={css.instagram} src={instagram} alt="instagram logo" />
                         </a>
-                        <a href="#">
+                        <a href="https://web.telegram.org/k/">
                             <Image className={css.telegram} src={telegram} alt="telegram logo" />
                         </a>
                     </div>
