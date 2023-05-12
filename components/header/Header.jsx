@@ -37,7 +37,7 @@ const Header = () => {
                     <Image className={css.logo} src={logo} alt="companys logo" />
                 </a>
 
-                <input type="text" className={css.search} ref={searchRef} />
+                <input type="text" placeholder='Поиск по продукции' className={css.search} ref={searchRef} />
                 <button type="submit" onClick={handleSearch}>Search</button>
                 <div className={css.links__container}>
                     <a className={css.user_link} href='/decor'>
