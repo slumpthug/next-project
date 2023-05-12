@@ -3,9 +3,9 @@ import css from './MainButtonTwo-style.module.css';
 
 const MainButtonTwo = ({text, link}) => {
     return (
-        <a href={link} className={css.mainButtonTwo}>
+        <button href={link} className={css.mainButtonTwo}>
             {text}
-        </a>
+        </button>
     );
 };
 
