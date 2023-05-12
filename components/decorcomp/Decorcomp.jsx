@@ -215,6 +215,7 @@ const Decorcomp = () => {
 
                         </div>
                     </div>
+                </div>
                     <div className={css.decor__check}>
                         <h3>ВАШ ЗАКАЗ</h3>
                         <div className={css.check__card_cont}>
