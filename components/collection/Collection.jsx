@@ -16,9 +16,9 @@ const Collection = () => {
             <div className={css.container}>
                 <h1>КОЛЛЕКЦИЯ</h1>
                 <div className={css.collection__wrapper}>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                    <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                    <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                    <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
                 </div>
                 <div className={css.collection__slider}>
                     <Swiper
@@ -38,13 +38,13 @@ const Collection = () => {
                         className="mySwiper2"
                     >
                         <SwiperSlide>
-                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                            <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>  
+                            <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>  
                         </SwiperSlide>
                         <SwiperSlide>
-                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                            <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
