@@ -16,8 +16,22 @@ import "swiper/css/pagination";
 
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import Privilege from "../privilege/Privilege";
+import DeliveryModal from "../delivery-modal/DeliveryModal";
+
+
 
 const Productcomp = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
+
     return (    
         <div className={css.product}>
             <div className={css.container}>
@@ -72,8 +86,9 @@ const Productcomp = () => {
                         </div>
                         <div className={css.product__buttons}>
                             <MainButtonTwo text='в корзину'/>
-                            <MainButtonTwo text='быстрый заказ'/>
+                            <MainButtonTwo text='быстрый заказ'  onClick={handleOpenModal} />
                         </div>
+                        <DeliveryModal isOpen={isModalOpen} onClose={handleCloseModal} />
                         <div className={css.product__description}>
                             <p>
                                 Куртка-бомбер из замшевого ширлинга Texture, который имеет бархатистый и матовый вид с наружной стороны. Пушистая и теплая внутренняя сторона обеспечивает должную защиту для холодного сезона.
