@@ -23,13 +23,13 @@
     margin-bottom: 30px;
 }
 
-.last__title button {
+.last__title a {
     position: relative;
     cursor: pointer;
     overflow: hidden;
 }
 
-.last__title button span {
+.last__title a span {
     position: relative;
     padding: 14px 20px;
     display: inline-block;
@@ -41,11 +41,11 @@
     transition: all .3s;
 }
 
-.last__title button span:hover {
+.last__title a span:hover {
     color: #000;
 }
 
-.last__title button::after {
+.last__title a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -56,7 +56,7 @@
     transition: width .5s, height .5s;
 }
 
-.last__title button:hover:after {
+.last__title a:hover:after {
     width: 100%;
     height: 100%;
 }

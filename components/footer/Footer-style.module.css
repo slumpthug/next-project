@@ -69,6 +69,10 @@
     font-size: 12px;
 }
 
+.footer__address div a:hover {
+    text-decoration: underline;
+}
+
 .footer__socials {
     display: flex;
     align-items: center;

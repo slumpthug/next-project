@@ -40,11 +40,11 @@ const Header = () => {
                 <input type="text" className={css.search} ref={searchRef} />
                 <button type="submit" onClick={handleSearch}>Search</button>
                 <div className={css.links__container}>
-                    <a className={css.user_link} href='#'>
+                    <a className={css.user_link} href='/decor'>
                         <Image className={css.box} src={box} alt="box" />
                         <span>Доставка</span>
                     </a>
-                    <a className={css.user_link} href='#'>
+                    <a className={css.user_link} href='/basket'>
                         <Image className={css.basket} src={basket} alt="basket" />
                         <span>Корзина</span>
                     </a>

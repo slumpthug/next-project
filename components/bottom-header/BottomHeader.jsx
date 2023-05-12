@@ -3,15 +3,13 @@ import css from './BottomHeader-style.module.css';
 import Image from 'next/image';
 import arrow from '../../public/bottom-header/arrow-right.svg';
 
-const BottomHeader = () => {
+const BottomHeader = ({text}) => {
     return (
         <div className={css.bottomHeader}>
             <div className={css.container}>
-                <a href="#">КОРЗИНА</a>
+                <a href="/">на главную</a>
                 <Image src={arrow} alt="arrow" />
-                <a href="#">ОФОРМЛЕНИЕ</a>
-                <Image src={arrow} alt="arrow" />
-                <a href="#">ЗАВЕРШЕНИЕ</a>
+                <a href="#">{text}</a>
             </div>
         </div>
     );

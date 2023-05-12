@@ -67,9 +67,9 @@ const Last = () => {
                 <div className={css.last__title}>
                     <Image className={css.logo} src={logo} alt="logo" />
                     <p>Изделия премиального качества из самых лучших материалов, ориентируясь на традиции итальянских производителей.</p>
-                    <button>
-                        <span>смотреть КОЛЛЕКЦИЮ</span>
-                    </button>
+                    <a href='/assemblage'>
+                            <span>смотреть КОЛЛЕКЦИЮ</span>
+                    </a>
                 </div>
                 <div className={css.margin}>
                     <div className={css.last__content}>
