@@ -209,6 +209,25 @@
     color: #969696;
 }
 
+.basket__btn_two {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 16px 40px;
+    background-color: #000;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.basket__btn_two:hover {
+    color: #000;
+    background-color: #d0d0d0;
+}
+
 @media (max-width: 1440px) {
     .basket__content {
         align-items: center;

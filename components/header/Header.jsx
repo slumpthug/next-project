@@ -2,9 +2,9 @@ import css from './Header-style.module.css';
 import Image from 'next/image';
 import burgerMenu from '../../public/header/burger.svg';
 import logo from '../../public/header/logo.svg';
-import box from '../../public/header/box.svg';
 import basket from '../../public/header/basket.svg';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import BurgerModal from '../burger-modal/BurgerModal';
 
 
 const Header = () => {
@@ -25,30 +25,34 @@ const Header = () => {
         }
     };
 
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
     
 
     return (
         <div className={css.header}>
             <div className={css.container}>
-                <a className={css.burgerMenu_link} href="#">
+                <button type='submit' className={css.burgerMenu_link} onClick={handleOpenModal}>
                     <Image className={css.burgerMenu} src={burgerMenu} alt="burger menu" />
-                </a>
+                </button>
                 <a className={css.logo_link} href='#'>
                     <Image className={css.logo} src={logo} alt="companys logo" />
                 </a>
-
-                <input type="text" className={css.search} ref={searchRef} />
+                <input type="text" placeholder='Поиск по продукции' className={css.search} ref={searchRef} />
                 <button type="submit" onClick={handleSearch}>Search</button>
-                <div className={css.links__container}>
-                    <a className={css.user_link} href='/decor'>
-                        <Image className={css.box} src={box} alt="box" />
-                        <span>Доставка</span>
-                    </a>
-                    <a className={css.user_link} href='/basket'>
-                        <Image className={css.basket} src={basket} alt="basket" />
-                        <span>Корзина</span>
-                    </a>
-                </div>
+                <a className={css.user_link} href='/basket'>
+                    <Image className={css.basket} src={basket} alt="basket" />
+                    <span>Корзина</span>
+                </a>
+                <BurgerModal isOpen={isModalOpen} onClose={handleCloseModal} />
             </div>
         </div>
     );

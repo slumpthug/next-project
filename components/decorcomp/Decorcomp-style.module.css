@@ -2,18 +2,6 @@
     margin: 50px 100px;
 }
 
-
-.errors {
-    color: red;
-    font-size: 14px;
-  }
-
-  .input_and_error{
-    display: flex;
-    flex-direction: column;
-  }
-  
-
 .decor__content {
     display: flex;
     justify-content: space-between;
@@ -102,16 +90,40 @@
     width: 100%;
 }
 
-.uneven__inputs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 20px;
-    margin-bottom: 15px;
-    width: 100%;
+.decorcomp__address .even__inputs:nth-child(2) {
+    margin-bottom: 20px;
 }
 
+.input_and_error {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.errors {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+}
+
+.errors__checkbox {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+}
+
+.errors__message {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+}
 
 .decor__check {
     width: 600px;
@@ -228,6 +240,23 @@
     color: #969696;
 }
 
+@media (max-width: 1400px) { 
+    .decor__inputs_part {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .decorcomp__address .even__inputs:nth-child(2) {
+        margin-bottom: 30px;
+    }
+
+    .delivery__part {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
 @media (max-width: 1050px) {    
     .decor__content {
         width: 100%;
@@ -241,6 +270,12 @@
 
     .decor__inputs_part {
         width: 100%;
+    }
+
+    .checkbox__cont {
+        align-items: flex-start;
+        row-gap: 20px;
+        flex-direction: column;
     }
 }
 
@@ -262,21 +297,11 @@
     .even__inputs {
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 20px;
     }
 
     .even__inputs input {
         width: 100%;
-    }
-
-    .delivery__part {
-        flex-direction: column;
-    }
-    
-    .checkbox__cont {
-        align-items: flex-start;
-        row-gap: 10px;
-        flex-direction: column;
     }
 
     .uneven__inputs {
@@ -302,5 +327,30 @@
 
     .card__ptice {
         width: 70px;
+    }
+}
+
+@media (max-width:320px) {
+    .even__inputs {
+        row-gap: 0px;
+    }
+
+    .decorcomp__address .even__inputs:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    .errors {
+        position: relative;
+        top: 0;
+    }
+    
+    .errors__checkbox {
+        position: relative;
+        top: 0;
+    }
+    
+    .errors__message {
+        position: relative;
+        top: 0;
     }
 }
