@@ -133,21 +133,23 @@ const Decorcomp = () => {
                                 <h4>
                                     Выберите способ получения заказа:
                                 </h4>
-                                <div className={css.checkbox__cont}>
-                                    <label><input className={css.checkbox} type="checkbox"
-                                        name="isHomeDeliveryChecked"
-                                        checked={formData.isHomeDeliveryChecked}
-                                        onChange={handleInputChange}
-                                    />Доставка на дом</label>
+                                <div className={css.input_and_error}>
+                                    <div className={css.checkbox__cont}>
+                                        <label><input className={css.checkbox} type="checkbox"
+                                            name="isHomeDeliveryChecked"
+                                            checked={formData.isHomeDeliveryChecked}
+                                            onChange={handleInputChange}
+                                        />Доставка на дом</label>
 
 
-                                    <label><input className={css.checkbox} type="checkbox"
-                                        name="isPickupPointChecked"
-                                        checked={formData.isPickupPointChecked}
-                                        onChange={handleInputChange}
-                                    />Пункт выдачи СДЭК</label>
+                                        <label><input className={css.checkbox} type="checkbox"
+                                            name="isPickupPointChecked"
+                                            checked={formData.isPickupPointChecked}
+                                            onChange={handleInputChange}
+                                        />Пункт выдачи СДЭК</label>
+                                    </div>
+                                    {errors.checkbox && <span className={css.errors__checkbox}>{errors.checkbox}</span>}
                                 </div>
-                                {errors.checkbox && <span className={css.errors}>{errors.checkbox}</span>}
                             </div>
                             <div>
                                 <h4>
@@ -156,28 +158,28 @@ const Decorcomp = () => {
                                 <span>Россия</span>
                             </div>
                         </div>
-                        <div>
+                        <div className={css.decorcomp__address}>
                             <h4>Адрес </h4>
-                            <div className={css.uneven__inputs}>
-                          <div className={css.input_and_error} >
-                          <input type="text" placeholder='Город *'
+                            <div className={css.even__inputs}>
+                                <div className={css.input_and_error} >
+                                    <input type="text" placeholder='Город *'
 
-name="city"
-value={formData.city}
-onChange={handleInputChange} />
-{errors.city && <span className={css.errors}>{errors.city}</span>}
-                          </div>
+                                    name="city"
+                                    value={formData.city}
+                                    onChange={handleInputChange} />
+                                    {errors.city && <span className={css.errors}>{errors.city}</span>}
+                                                              </div>
 
-<div className={css.input_and_error} >
-<input type="text" placeholder='Номер дома и название улицы *'
+                                    <div className={css.input_and_error} >
+                                    <input type="text" placeholder='Номер дома и название улицы *'
 
-name="houseNumber"
-value={formData.houseNumber}
-onChange={handleInputChange}
-/>
-{errors.houseNumber && <span className={css.errors}>{errors.houseNumber}</span>}
+                                    name="houseNumber"
+                                    value={formData.houseNumber}
+                                    onChange={handleInputChange}
+                                    />
+                                    {errors.houseNumber && <span className={css.errors}>{errors.houseNumber}</span>}
 
-</div>
+                                </div>
                               
                             </div>
                             <div className={css.even__inputs}>
@@ -195,7 +197,7 @@ onChange={handleInputChange}
 
                             <div className={css.input_and_error}>
                            
-  <input type="text" placeholder='Телефон *'
+                                 <input type="text" placeholder='Телефон *'
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleInputChange}
@@ -206,12 +208,12 @@ onChange={handleInputChange}
                               
                             </div>
                         </div>
-                        <div>
+                        <div className={css.input_and_error}>
                             <h4>Примечание к заказу</h4>
                             <textarea name="message"
                                 value={formData.message}
                                 onChange={handleInputChange} id="" placeholder='Например, особые пожелания отделу доставки' />
-                            {errors.message && <span className={css.errors}>{errors.message}</span>}
+                            {errors.message && <span className={css.errors__message}>{errors.message}</span>}
 
                         </div>
                     </div>
