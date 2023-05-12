@@ -8,7 +8,7 @@ const form = () => {
     return (
         <div>
             <Header/>
-            <BottomHeader/>
+            <BottomHeader text='образ'/>
             <Formcomp/>
             <Footer/>
         </div>

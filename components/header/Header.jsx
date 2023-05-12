@@ -1,12 +1,32 @@
-import React from 'react';
 import css from './Header-style.module.css';
 import Image from 'next/image';
-import burgerMenu from  '../../public/header/burger.svg';
-import logo from  '../../public/header/logo.svg';
-import box from  '../../public/header/box.svg';
-import basket from  '../../public/header/basket.svg';
+import burgerMenu from '../../public/header/burger.svg';
+import logo from '../../public/header/logo.svg';
+import box from '../../public/header/box.svg';
+import basket from '../../public/header/basket.svg';
+import React, { useRef } from 'react';
+
 
 const Header = () => {
+
+    const searchRef = useRef(null);
+
+    const handleSearch = () => {
+        const searchText = searchRef.current.value;
+        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+        for (let i = 0; i < headers.length; i++) {
+            const headerText = headers[i].textContent.toLowerCase();
+
+            if (headerText.includes(searchText.toLowerCase())) {
+                headers[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                break;
+            }
+        }
+    };
+
+    
+
     return (
         <div className={css.header}>
             <div className={css.container}>
@@ -16,13 +36,15 @@ const Header = () => {
                 <a className={css.logo_link} href='#'>
                     <Image className={css.logo} src={logo} alt="companys logo" />
                 </a>
-                <input placeholder='Поиск по продукции' className={css.search}></input>
+
+                <input type="text" className={css.search} ref={searchRef} />
+                <button type="submit" onClick={handleSearch}>Search</button>
                 <div className={css.links__container}>
-                    <a className={css.user_link} href='#'>
+                    <a className={css.user_link} href='/decor'>
                         <Image className={css.box} src={box} alt="box" />
                         <span>Доставка</span>
                     </a>
-                    <a className={css.user_link} href='#'>
+                    <a className={css.user_link} href='/basket'>
                         <Image className={css.basket} src={basket} alt="basket" />
                         <span>Корзина</span>
                     </a>

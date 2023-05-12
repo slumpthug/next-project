@@ -8,7 +8,7 @@ const product = () => {
     return (
         <div>
             <Header/>
-            <BottomHeader/>
+            <BottomHeader text='товар'/>
             <Productcomp/>
             <Footer/>
         </div>

@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useState } from "react";
 import css from './Decorcomp-style.module.css';
 import Privilege from '../privilege/Privilege';
 import Image from 'next/image';
@@ -7,16 +8,125 @@ import MainButtonTwo from '../main-button-two/MainButtonTwo';
 import boots from '../../public/basket/boots.png';
 
 
+
+
+
+
+
+
 const Decorcomp = () => {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        city: '',
+        houseNumber: '',
+        email: '',
+        phone: '',
+        message: '',
+        isHomeDeliveryChecked: false,
+        isPickupPointChecked: false,
+    });
+    const [errors, setErrors] = useState({});
+
+    const validate = () => {
+        const errors = {};
+
+        if (!formData.firstName.trim()) {
+            errors.firstName = 'Поле "Имя" обязательно для заполнения';
+        }
+        if (!formData.lastName.trim()) {
+            errors.lastName = 'Поле "Фамилия" обязательно для заполнения';
+        }
+        if (!formData.city.trim()) {
+            errors.city = 'Поле "Город" обязательно для заполнения';
+        }
+        if (!formData.houseNumber.trim()) {
+            errors.houseNumber = 'Поле "Номер дома" обязательно для заполнения';
+        }
+        if (!formData.message.trim()) {
+            errors.message = 'Поле "Сообщение" обязательно для заполнения';
+        }
+        if (!formData.isHomeDeliveryChecked && !formData.isPickupPointChecked) {
+            errors.checkbox = 'Выберите хотя бы одну опцию';
+        }
+        if (!formData.email.trim()) {
+            errors.email = 'Поле обязательно для заполнения';
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            errors.email = 'Неправильный формат почты';
+        }
+        if (!formData.phone.trim()) {
+            errors.phone = 'Поле обязательно для заполнения';
+        } else if (!/^[+]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/.test(formData.phone)) {
+            errors.phone = 'Неправильный формат телефона';
+        }
+
+        return errors;
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const errors = validate();
+        if (Object.keys(errors).length === 0) {
+            // Отправка данных формы
+            setFormData({
+                firstName: '',
+                lastName: '',
+                city: '',
+                houseNumber: '',
+                email: '',
+                phone: '',
+                message: '',
+                isHomeDeliveryChecked: false,
+                isPickupPointChecked: false,
+            });
+            setErrors({});
+        } else {
+            setErrors(errors);
+        }
+    };
+
+    const handleInputChange = (event) => {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+        setErrors({
+            ...errors,
+            [name]: '',
+        });
+    };
+
     return (
-        <div className={css.decor}>
+        <form onSubmit={handleSubmit} className={css.decor}>
             <div className={css.container}>
                 <div className={css.decor__content}>
                     <div className={css.decor__inputs_part}>
                         <h3>ДЕТАЛИ ОПЛАТЫ</h3>
                         <div className={css.even__inputs}>
-                            <input type="text" placeholder='Имя *'/>
-                            <input type="text" placeholder='Фамилия *'/>
+                            <div className={css.input_and_error}>
+                                <input type="text" placeholder='Имя *'
+                                    name="firstName"
+                                    value={formData.firstName}
+                                    onChange={handleInputChange}
+                                />
+                                {errors.firstName && <span className={css.errors} >{errors.firstName}</span>}
+                            </div>
+
+
+                            <div className={css.input_and_error}>
+                                <input type="text" placeholder='Фамилия *'
+
+                                    name="lastName"
+                                    value={formData.lastName}
+                                    onChange={handleInputChange}
+                                />
+                                {errors.lastName && <span className={css.errors}>{errors.lastName}</span>}
+
+                            </div>
                         </div>
                         <div className={css.delivery__part}>
                             <div>
@@ -24,9 +134,20 @@ const Decorcomp = () => {
                                     Выберите способ получения заказа:
                                 </h4>
                                 <div className={css.checkbox__cont}>
-                                    <label><input className={css.checkbox} type="checkbox" />Доставка на дом</label>
-                                    <label><input className={css.checkbox} type="checkbox" />Пункт выдачи СДЭК</label>
+                                    <label><input className={css.checkbox} type="checkbox"
+                                        name="isHomeDeliveryChecked"
+                                        checked={formData.isHomeDeliveryChecked}
+                                        onChange={handleInputChange}
+                                    />Доставка на дом</label>
+
+
+                                    <label><input className={css.checkbox} type="checkbox"
+                                        name="isPickupPointChecked"
+                                        checked={formData.isPickupPointChecked}
+                                        onChange={handleInputChange}
+                                    />Пункт выдачи СДЭК</label>
                                 </div>
+                                {errors.checkbox && <span className={css.errors}>{errors.checkbox}</span>}
                             </div>
                             <div>
                                 <h4>
@@ -38,19 +159,62 @@ const Decorcomp = () => {
                         <div>
                             <h4>Адрес </h4>
                             <div className={css.uneven__inputs}>
-                                <input type="text" placeholder='Город *'/>
-                                <input type="text" placeholder='Номер дома и название улицы *'/>
+                          <div className={css.input_and_error} >
+                          <input type="text" placeholder='Город *'
+
+name="city"
+value={formData.city}
+onChange={handleInputChange} />
+{errors.city && <span className={css.errors}>{errors.city}</span>}
+                          </div>
+
+<div className={css.input_and_error} >
+<input type="text" placeholder='Номер дома и название улицы *'
+
+name="houseNumber"
+value={formData.houseNumber}
+onChange={handleInputChange}
+/>
+{errors.houseNumber && <span className={css.errors}>{errors.houseNumber}</span>}
+
+</div>
+                              
                             </div>
                             <div className={css.even__inputs}>
-                                <input type="text" placeholder='Email *'/>
-                                <input type="text" placeholder='Телефон *'/>
+
+                            <div className={css.input_and_error}>
+                              <input type="text" placeholder='Email *'
+
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleInputChange}
+                                />
+                                {errors.email && <span className={css.errors}>{errors.email}</span>}
+
+                            </div>
+
+                            <div className={css.input_and_error}>
+                           
+  <input type="text" placeholder='Телефон *'
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleInputChange}
+                                />
+                                {errors.phone && <span className={css.errors}>{errors.phone}</span>}
+
+                            </div>
+                              
                             </div>
                         </div>
                         <div>
                             <h4>Примечание к заказу</h4>
-                            <textarea name="" id="" placeholder='Например, особые пожелания отделу доставки'></textarea>
+                            <textarea name="message"
+                                value={formData.message}
+                                onChange={handleInputChange} id="" placeholder='Например, особые пожелания отделу доставки' />
+                            {errors.message && <span className={css.errors}>{errors.message}</span>}
+
                         </div>
-                    </div>  
+                    </div>
                     <div className={css.decor__check}>
                         <h3>ВАШ ЗАКАЗ</h3>
                         <div className={css.check__card_cont}>
@@ -88,12 +252,12 @@ const Decorcomp = () => {
                                 <p>Оплата осуществляется курьеру СДЭК картой или наличными. <span>Оплата после примерки.</span></p>
                             </div>
                         </div>
-                        <MainButtonTwo text='ПОДТВЕРДИТЬ заказ'/>
+                        <MainButtonTwo text='ПОДТВЕРДИТЬ заказ' />
                     </div>
                 </div>
-                <Privilege/>
+                <Privilege />
             </div>
-        </div>
+        </form>
     );
 };
 
