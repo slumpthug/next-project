@@ -1,11 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './DeliveryModal-style.module.css';
 import MainButtonTwo from '../main-button-two/MainButtonTwo';
 import Image from 'next/image';
 import jacket from '../../public/delivery-modal/jacket.png';
 import close from '../../public/delivery-modal/close.svg';
 
+
 const DeliveryModal = () => {
+
+
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+    });
+    const [errors, setErrors] = useState({});
+
+    const validate = () => {
+        const errors = {};
+
+        if (!formData.name.trim()) {
+            errors.name = 'Поле "Имя" обязательно для заполнения';
+        }
+
+        if (!formData.phone.trim()) {
+            errors.phone = 'Поле "Телефон" обязательно для заполнения';
+        } else if (!/^\d{10}$/.test(formData.phone.trim())) {
+            errors.phone = 'Введите корректный номер телефона (10 цифр без пробелов и дефисов)';
+        }
+        return errors;
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const errors = validate();
+        if (Object.keys(errors).length === 0) {
+            // Отправка данных формы
+            setFormData({
+                name: '',
+                phone: '',
+            });
+            setErrors({});
+        } else {
+            setErrors(errors);
+        }
+    };
+
+    const handleInputChange = (event) => {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+        setErrors({
+            ...errors,
+            [name]: '',
+        });
+    };
+
+
+
     return (
         <div className={css.deliveryModal}>
             <div className={css.container}>
@@ -20,16 +76,26 @@ const DeliveryModal = () => {
                         <span className={css.card__size}>50</span>
                     </div>
                 </div>
-                <div className={css.deliveryModal__order}>
+                <form onSubmit={handleSubmit} className={css.deliveryModal__order}>
                     <h1>БЫСТРЫЙ ЗАКАЗ</h1>
-                    <input type="text" placeholder='Имя'/>
-                    <input type="text" placeholder='Телефон'/>
+                    <input type="text" placeholder='Имя'
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange} />
+                    {errors.name && <span style={{color: 'red'}}>{errors.name}</span>}
+
+                    <input type="text" placeholder='Телефон' 
+                    name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange} />
+                    {errors.phone && <span style={{color: 'red'}}>{errors.phone}</span>}
+
                     <MainButtonTwo text='купить' />
                     <span>
-                        Завершая оформление заказа, я подтверждаю ознакомление с 
+                        Завершая оформление заказа, я подтверждаю ознакомление с
                         <a href="#">указанными условиями</a>
                     </span>
-                </div>
+                </form>
                 <button className={css.DeliveryModal__close}>
                     <Image className={css.close} src={close} alt="close img" />
                 </button>

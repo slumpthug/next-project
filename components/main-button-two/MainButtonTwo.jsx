@@ -3,9 +3,10 @@ import css from './MainButtonTwo-style.module.css';
 
 const MainButtonTwo = ({text, link}) => {
     return (
-        <a href={link} className={css.mainButtonTwo}>
+        <button type='submit'>   <a href={link}  className={css.mainButtonTwo}>
             {text}
-        </a>
+        </a></button>
+     
     );
 };
 

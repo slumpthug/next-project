@@ -159,51 +159,51 @@ const Decorcomp = () => {
                         <div>
                             <h4>Адрес </h4>
                             <div className={css.uneven__inputs}>
-                          <div className={css.input_and_error} >
-                          <input type="text" placeholder='Город *'
+                                <div className={css.input_and_error} >
+                                    <input type="text" placeholder='Город *'
 
-name="city"
-value={formData.city}
-onChange={handleInputChange} />
-{errors.city && <span className={css.errors}>{errors.city}</span>}
-                          </div>
+                                        name="city"
+                                        value={formData.city}
+                                        onChange={handleInputChange} />
+                                    {errors.city && <span className={css.errors}>{errors.city}</span>}
+                                </div>
 
-<div className={css.input_and_error} >
-<input type="text" placeholder='Номер дома и название улицы *'
+                                <div className={css.input_and_error} >
+                                    <input type="text" placeholder='Номер дома и название улицы *'
 
-name="houseNumber"
-value={formData.houseNumber}
-onChange={handleInputChange}
-/>
-{errors.houseNumber && <span className={css.errors}>{errors.houseNumber}</span>}
+                                        name="houseNumber"
+                                        value={formData.houseNumber}
+                                        onChange={handleInputChange}
+                                    />
+                                    {errors.houseNumber && <span className={css.errors}>{errors.houseNumber}</span>}
 
-</div>
-                              
+                                </div>
+
                             </div>
                             <div className={css.even__inputs}>
 
-                            <div className={css.input_and_error}>
-                              <input type="text" placeholder='Email *'
+                                <div className={css.input_and_error}>
+                                    <input type="text" placeholder='Email *'
 
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
-                                />
-                                {errors.email && <span className={css.errors}>{errors.email}</span>}
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleInputChange}
+                                    />
+                                    {errors.email && <span className={css.errors}>{errors.email}</span>}
 
-                            </div>
+                                </div>
 
-                            <div className={css.input_and_error}>
-                           
-  <input type="text" placeholder='Телефон *'
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleInputChange}
-                                />
-                                {errors.phone && <span className={css.errors}>{errors.phone}</span>}
+                                <div className={css.input_and_error}>
 
-                            </div>
-                              
+                                    <input type="text" placeholder='Телефон *'
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleInputChange}
+                                    />
+                                    {errors.phone && <span className={css.errors}>{errors.phone}</span>}
+
+                                </div>
+
                             </div>
                         </div>
                         <div>

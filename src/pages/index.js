@@ -8,6 +8,7 @@ import Perfumes from '../../components/perfumes/Perfumes'
 import Promotion from '../../components/promotion/Promotion'
 import Last from '../../components/last/Last'
 import Footer from '../../components/footer/Footer'
+import DeliveryModal from '../../components/delivery-modal/DeliveryModal'
 
 export default function Home() {
   return (
@@ -27,6 +28,8 @@ export default function Home() {
       <Promotion/>
       <Last/>
       <Footer/>
+      <DeliveryModal/>
+
     </>
   )
 }

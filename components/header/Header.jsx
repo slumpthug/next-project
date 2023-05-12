@@ -13,7 +13,7 @@ const Header = () => {
 
     const handleSearch = () => {
         const searchText = searchRef.current.value;
-        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a');
 
         for (let i = 0; i < headers.length; i++) {
             const headerText = headers[i].textContent.toLowerCase();
