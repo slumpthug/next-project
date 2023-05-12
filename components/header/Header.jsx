@@ -13,13 +13,13 @@ const Header = () => {
 
     const handleSearch = () => {
         const searchText = searchRef.current.value;
-        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a');
+        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
 
         for (let i = 0; i < headers.length; i++) {
             const headerText = headers[i].textContent.toLowerCase();
 
             if (headerText.includes(searchText.toLowerCase())) {
-                headers[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                headers[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
                 break;
             }
         }
