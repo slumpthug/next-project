@@ -3,7 +3,7 @@ import Image from 'next/image';
 import burgerMenu from '../../public/header/burger.svg';
 import logo from '../../public/header/logo.svg';
 import basket from '../../public/header/basket.svg';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import BurgerModal from '../burger-modal/BurgerModal';
 
 
@@ -25,14 +25,24 @@ const Header = () => {
         }
     };
 
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
     
 
     return (
         <div className={css.header}>
             <div className={css.container}>
-                <a className={css.burgerMenu_link} href="#">
+                <button type='submit' className={css.burgerMenu_link} onClick={handleOpenModal}>
                     <Image className={css.burgerMenu} src={burgerMenu} alt="burger menu" />
-                </a>
+                </button>
                 <a className={css.logo_link} href='#'>
                     <Image className={css.logo} src={logo} alt="companys logo" />
                 </a>
@@ -42,7 +52,7 @@ const Header = () => {
                     <Image className={css.basket} src={basket} alt="basket" />
                     <span>Корзина</span>
                 </a>
-                <BurgerModal/>
+                <BurgerModal isOpen={isModalOpen} onClose={handleCloseModal} />
             </div>
         </div>
     );
