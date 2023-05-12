@@ -1,0 +1,91 @@
+.container {
+    padding: 20px 40px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    overflow: scroll;
+}
+
+.burgerModal__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.burgerModal__top h1 {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.burgerModal__top button {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.burgerModal__top button span {
+    position: relative;
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.burgerModal__top button span:hover {
+    color: #fff;
+}
+
+.burgerModal__top button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: width .5s, height .5s;
+}
+
+.burgerModal__top button:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.burgerModal__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.burgerModal__card {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 160px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 20px;
+    background: url(../../public/burger-modal/moda.jpg) no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+}
+
+.burgerModal__card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}

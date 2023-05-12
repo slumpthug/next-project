@@ -4,6 +4,7 @@ import burgerMenu from '../../public/header/burger.svg';
 import logo from '../../public/header/logo.svg';
 import basket from '../../public/header/basket.svg';
 import React, { useRef } from 'react';
+import BurgerModal from '../burger-modal/BurgerModal';
 
 
 const Header = () => {
@@ -41,6 +42,7 @@ const Header = () => {
                     <Image className={css.basket} src={basket} alt="basket" />
                     <span>Корзина</span>
                 </a>
+                <BurgerModal/>
             </div>
         </div>
     );
