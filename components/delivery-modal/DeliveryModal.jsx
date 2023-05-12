@@ -5,15 +5,10 @@ import Image from 'next/image';
 import jacket from '../../public/delivery-modal/jacket.png';
 import close from '../../public/delivery-modal/close.svg';
 
-const DeliveryModal = ({ isOpen, onClose }) => {
-
-    if (!isOpen) {
-        return null; // Если модальное окно закрыто, возвращаем null, чтобы ничего не отображать
-      }
-
+const DeliveryModal = () => {
     return (
-        <div className={css.deliveryModal} onClick={() => onClose(false)}>
-            <div className={css.container} onClick={(e) => e.stopPropagation()}>
+        <div className={css.deliveryModal}>
+            <div className={css.container}>
                 <div className={css.deliveryModal__card}>
                     <Image className={css.jacket} src={jacket} alt="jacket" />
                     <div className={css.card__info}>
@@ -35,7 +30,7 @@ const DeliveryModal = ({ isOpen, onClose }) => {
                         <a href="#">указанными условиями</a>
                     </span>
                 </div>
-                <button className={css.DeliveryModal__close} onClick={onClose} >
+                <button className={css.DeliveryModal__close}>
                     <Image className={css.close} src={close} alt="close img" />
                 </button>
             </div>

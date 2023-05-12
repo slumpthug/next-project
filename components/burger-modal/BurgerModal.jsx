@@ -1,13 +1,18 @@
 import React from 'react';
 import css from './BurgerModal-style.module.css';
 
-const BurgerModal = () => {
+const BurgerModal = ({ isOpen, onClose }) => {
+
+    if (!isOpen) {
+        return null; // Если модальное окно закрыто, возвращаем null, чтобы ничего не отображать
+      }
+
     return (
         <div className={css.burgerModal}>
             <div className={css.container}>
                 <div className={css.burgerModal__top}>
                     <h1>ВЫБЕРИТЕ КАТЕГОРИЮ</h1>
-                    <button>
+                    <button  onClick={onClose} >
                         <span>ЗАКРЫТЬ</span>
                     </button>
                 </div>
