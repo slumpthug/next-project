@@ -12,12 +12,6 @@
     column-gap: 16px;
 }
 
-.assemblagecomp__filter span {
-    font-weight: 400;
-    font-size: 16px;
-    color: #969696;
-}
-
 .assemblagecomp__wrapper {
     display: flex;
     justify-content: center;
