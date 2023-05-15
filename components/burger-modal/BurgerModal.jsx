@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './BurgerModal-style.module.css';
 import Image from 'next/image';
 import close from '../../public/delivery-modal/close.svg';
 
-const BurgerModal = ({ isOpen, onClose }) => {
+const BurgerModal = ({ isOpen, onClose, setCatalog }) => {
 
     if (!isOpen) {
         return null; // Если модальное окно закрыто, возвращаем null, чтобы ничего не отображать
-      }
+    }
 
     return (
         <div className={css.burgerModal} onClick={() => onClose(false)}>
@@ -23,7 +23,7 @@ const BurgerModal = ({ isOpen, onClose }) => {
                     <a className={css.burgerModal__card} href="/assemblage">
                         Вся коллекция
                     </a>
-                    <a className={css.burgerModal__card} href="">
+                    <a className={css.burgerModal__card} href="/catalog" onClick={() => setCatalog(1)}>
                         Новинки
                     </a>
                     <a className={css.burgerModal__card} href="">
