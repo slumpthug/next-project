@@ -12,31 +12,37 @@ const Assemblagecomp = () => {
             id: 1,
             text: 'Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni', 
             cat: 1,
+            product: 0,
         },
         {
             id: 2,
             text: 'Пуховый жилет Kiton, джинсы Jacob Cohen, футболка Fedeli, кроссовки Valentino, бейсболка Kiton',
             cat: 3,
+            product: 0,
         },
         {
             id: 3,
             text: 'aaaaaaaaaaaaaaaaaaaaaaa',
             cat: 1,
+            product: 0,
         },
         {
             id: 4,
             text: 'bbbbbbbbbbbbbbbbbbbbbbbbbb',
             cat: 3,
+            product: 0,
         },
         {
             id: 5,
             text: 'Пуховый жилет Kiton, джинсы Jacob Cohen, футболка Fedeli, кроссовки Valentino, бейсболка Kiton',
             cat: 1,
+            product: 0,
         },
         {
             id: 6,
             text: 'Пуховый жилет Kiton, джинсы Jacob Cohen, футболка Fedeli, кроссовки Valentino, бейсболка Kiton',
             cat: 3,
+            product: 0,
         },
     ]
 
@@ -51,6 +57,13 @@ const Assemblagecomp = () => {
                 </div>
                 <div className={css.assemblagecomp__wrapper}>
                     {card.filter(item => item.cat == category ).map( item => {
+                        return (
+                            <>
+                                <CollectionCard link='/form' text={item.text} img={man} />
+                            </>
+                        )
+                    })}
+                    {card.filter(item => item.product == category ).map( item => {
                         return (
                             <>
                                 <CollectionCard link='/form' text={item.text} img={man} />

@@ -12,6 +12,16 @@
     column-gap: 16px;
 }
 
+.assemblagecomp__filter button {
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.assemblagecomp__filter button:hover{
+    text-decoration: underline;
+}
+
 .assemblagecomp__wrapper {
     display: flex;
     justify-content: center;
