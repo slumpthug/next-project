@@ -6,21 +6,23 @@
     border-bottom: 1px solid #000000;
 }
 
-.container a {
+.container span {
     font-weight: 600;
     font-size: 14px;
     color: #969696;
     text-transform: uppercase;
-    cursor: auto;
 }
 
-.container a:first-child {
+.container a {
     position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
     color: #333333;
     cursor: pointer;
 }
 
-.container a:first-child::before {
+.container a::before {
     content: '';
     display: block;
     position: absolute;
@@ -32,7 +34,7 @@
     transition: all .3s;
 }
 
-.container a:first-child:hover::before {
+.container a:hover::before {
     width: 100%;
 }
 

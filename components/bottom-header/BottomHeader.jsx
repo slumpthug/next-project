@@ -9,7 +9,7 @@ const BottomHeader = ({text}) => {
             <div className={css.container}>
                 <a href="/">на главную</a>
                 <Image src={arrow} alt="arrow" />
-                <a href="#">{text}</a>
+                <span>{text}</span>
             </div>
         </div>
     );

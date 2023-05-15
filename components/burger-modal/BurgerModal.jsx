@@ -1,5 +1,7 @@
 import React from 'react';
 import css from './BurgerModal-style.module.css';
+import Image from 'next/image';
+import close from '../../public/delivery-modal/close.svg';
 
 const BurgerModal = ({ isOpen, onClose }) => {
 
@@ -8,55 +10,40 @@ const BurgerModal = ({ isOpen, onClose }) => {
       }
 
     return (
-        <div className={css.burgerModal}>
-            <div className={css.container}>
+        <div className={css.burgerModal} onClick={() => onClose(false)}>
+            <div className={css.container} onClick={(e) => e.stopPropagation()}>
                 <div className={css.burgerModal__top}>
                     <h1>ВЫБЕРИТЕ КАТЕГОРИЮ</h1>
                     <button  onClick={onClose} >
                         <span>ЗАКРЫТЬ</span>
+                        <Image className={css.close} src={close} alt="close img" />
                     </button>
                 </div>
                 <div className={css.burgerModal__wrapper}>
-                    <a className={css.burgerModal__card} href="">
-                        Новинки
+                    <a className={css.burgerModal__card} href="/assemblage">
+                        Вся коллекция
                     </a>
                     <a className={css.burgerModal__card} href="">
                         Новинки
                     </a>
                     <a className={css.burgerModal__card} href="">
-                        Новинки
+                        Скидки
                     </a>
                     <a className={css.burgerModal__card} href="">
-                        Новинки
+                        Верхняя одежда
                     </a>
                     <a className={css.burgerModal__card} href="">
-                        Новинки
+                        Пуховики
                     </a>
                     <a className={css.burgerModal__card} href="">
-                        Новинки
+                        Жилетки
                     </a>
                     <a className={css.burgerModal__card} href="">
-                        Новинки
+                        Пиджаки и костюмы
                     </a>
                     <a className={css.burgerModal__card} href="">
-                        Новинки
+                        Обувь
                     </a>
-                    <a className={css.burgerModal__card} href="">
-                        Новинки
-                    </a>
-                    <a className={css.burgerModal__card} href="">
-                        Новинки
-                    </a>
-                    <a className={css.burgerModal__card} href="">
-                        Новинки
-                    </a>
-                    <a className={css.burgerModal__card} href="">
-                        Новинки
-                    </a>
-                    <a className={css.burgerModal__card} href="">
-                        Новинки
-                    </a>
-                    
                 </div>
             </div>
         </div>
