@@ -66,8 +66,8 @@ const DeliveryModal = ({ isOpen, onClose }) => {
 
 
     return (
-        <div className={css.deliveryModal}>
-            <div className={css.container}>
+        <div className={css.deliveryModal} onClick={() => onClose(false)}>
+            <div className={css.container} onClick={(e) => e.stopPropagation()}>
                 <div className={css.deliveryModal__card}>
                     <Image className={css.jacket} src={jacket} alt="jacket" />
                     <div className={css.card__info}>

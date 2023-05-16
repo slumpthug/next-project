@@ -59,7 +59,11 @@ const Basketcomp = ({ item }) => {
                                 <span>Доставка в случае отказа <br /> 1 500 руб.</span>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <MainButtonTwo text='оформить заказ' />
+=======
+                        <MainButtonTwo link='/decor' text='оформить заказ'/>
+>>>>>>> 2f3b97c21aa311438f6fd5e98f303a28f431e567
                     </div>
                 </div>
                 <Privilege />
