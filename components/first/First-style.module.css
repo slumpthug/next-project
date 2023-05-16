@@ -1,78 +1,77 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .man_part {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 800px;
-    background: url('../../public/first/man.jpg') no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background: url("../../public/first/man.jpg") no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
- 
+
 .woman_part {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 800px;
-    background: url('../../public/first/woman.jpg') no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background: url("../../public/first/woman.jpg") no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 .first__title {
-    position: relative;
-    display: inline-block;
-    font-weight: 300;
-    font-size: 75px;
-    color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 75px;
+  color: #ffffff;
 }
 
 .first__title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate( -50%, 0%);
-    display: inline-block;
-    background-color: #FFFFFF;
-    width: 191px;
-    height: 3px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: inline-block;
+  background-color: #ffffff;
+  width: 191px;
+  height: 3px;
 }
 
 @media (max-width: 1000px) {
-    .container {
-        flex-direction: column;
-        justify-content: initial;
-    }
+  .container {
+    flex-direction: column;
+    justify-content: initial;
+  }
 }
 
-
 @media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-        justify-content: initial;
-    }
+  .container {
+    flex-direction: column;
+    justify-content: initial;
+  }
 
-    .first__title {
-        font-size: 50px;
-    }
+  .first__title {
+    font-size: 50px;
+  }
 
-    .man_part {
-        height: 500px;
-    }
-     
-    .woman_part {
-        height: 500px;
-    }
+  .man_part {
+    height: 500px;
+  }
+
+  .woman_part {
+    height: 500px;
+  }
 }

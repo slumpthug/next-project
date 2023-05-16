@@ -1,63 +1,63 @@
 .container {
-    padding: 15px 140px;
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
-    border-bottom: 1px solid #000000;
+  padding: 15px 140px;
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  border-bottom: 1px solid #000000;
 }
 
 .container a {
-    font-weight: 600;
-    font-size: 14px;
-    color: #969696;
-    text-transform: uppercase;
-    cursor: auto;
+  font-weight: 600;
+  font-size: 14px;
+  color: #969696;
+  text-transform: uppercase;
+  cursor: auto;
 }
 
 .container a:first-child {
-    position: relative;
-    color: #333333;
-    cursor: pointer;
+  position: relative;
+  color: #333333;
+  cursor: pointer;
 }
 
 .container a:first-child::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0px;
-    height: 1.5px;
-    background-color: #333333;
-    transition: all .3s;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0px;
+  height: 1.5px;
+  background-color: #333333;
+  transition: all 0.3s;
 }
 
 .container a:first-child:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1400px) {
-    .container {
-        padding: 22px 60px;
-    }
+  .container {
+    padding: 22px 60px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .container {
-        padding: 22px;
-    }
+  .container {
+    padding: 22px;
+  }
 
-    .container {
-        justify-content: center;
-    }
+  .container {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1000px) {
-    .container a {
-        display: none;
-    }
-    
-    .container a:first-child {
-       display: inline-block;
-    }
+  .container a {
+    display: none;
+  }
+
+  .container a:first-child {
+    display: inline-block;
+  }
 }

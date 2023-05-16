@@ -7,10 +7,10 @@ import Decorcomp from '../../components/decorcomp/Decorcomp';
 const decor = () => {
     return (
         <div>
-            <Header/>
-            <BottomHeader text='ОФОРМЛЕНИЕ'/>
-            <Decorcomp/>
-            <Footer/>
+            <Header />
+            <BottomHeader text='ОФОРМЛЕНИЕ' />
+            <Decorcomp />
+            <Footer />
         </div>
     );
 };

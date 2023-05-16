@@ -4,7 +4,7 @@ import burgerMenu from '../../public/header/burger.svg';
 import logo from '../../public/header/logo.svg';
 import box from '../../public/header/box.svg';
 import basket from '../../public/header/basket.svg';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 
 const Header = () => {
@@ -25,7 +25,18 @@ const Header = () => {
         }
     };
 
-    
+
+
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleKeyPress = (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // Отменить стандартное поведение формы
+        handleSearch();
+      }
+    };
+
+
 
     return (
         <div className={css.header}>
@@ -37,7 +48,13 @@ const Header = () => {
                     <Image className={css.logo} src={logo} alt="companys logo" />
                 </a>
 
-                <input type="text" className={css.search} ref={searchRef} />
+                <input type="text" 
+                className={css.search} 
+                ref={searchRef} 
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+                onKeyPress={handleKeyPress}
+                />
                 <button type="submit" onClick={handleSearch}>Search</button>
                 <div className={css.links__container}>
                     <a className={css.user_link} href='/decor'>

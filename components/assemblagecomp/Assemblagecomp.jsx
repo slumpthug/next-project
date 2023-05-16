@@ -14,18 +14,18 @@ const Assemblagecomp = () => {
                     <div>по популярности</div>
                 </div>
                 <div className={css.assemblagecomp__wrapper}>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
                 </div>
-                <Privilege/>
+                <Privilege />
             </div>
         </div>
     );

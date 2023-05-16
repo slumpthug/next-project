@@ -9,7 +9,7 @@ const Perfumes = () => {
                     <button>парфюм</button>
                     <div className={css.perfumes__title}>
                         <h2>
-                            Maison <br/> Francis Kurkdjian <br/> Baccarat Rouge 540
+                            Maison <br /> Francis Kurkdjian <br /> Baccarat Rouge 540
                         </h2>
                         <button>
                             <span>смотреть</span>
@@ -20,7 +20,7 @@ const Perfumes = () => {
                     <button>запах месяца</button>
                     <div className={css.perfumes__title}>
                         <h2>
-                            Dr.Vranjes <br/> Rosso Nibile
+                            Dr.Vranjes <br /> Rosso Nibile
                         </h2>
                         <button>
                             <span>смотреть</span>

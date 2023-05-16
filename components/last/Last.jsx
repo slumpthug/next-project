@@ -62,13 +62,13 @@ const Last = () => {
 
 
     return (
-        <div  className={css.last}>
+        <div className={css.last}>
             <div className={css.container}>
                 <div className={css.last__title}>
                     <Image className={css.logo} src={logo} alt="logo" />
                     <p>Изделия премиального качества из самых лучших материалов, ориентируясь на традиции итальянских производителей.</p>
                     <a href='/assemblage'>
-                            <span>смотреть КОЛЛЕКЦИЮ</span>
+                        <span>смотреть КОЛЛЕКЦИЮ</span>
                     </a>
                 </div>
                 <div className={css.margin}>

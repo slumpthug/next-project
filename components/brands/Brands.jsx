@@ -29,7 +29,7 @@ const Brands = () => {
                         <Image className={css.logo} src={logo} alt="" />
                     </a>
                 </div>
-                <MainButton text="все бренды"/>
+                <MainButton text="все бренды" />
             </div>
         </div>
     );

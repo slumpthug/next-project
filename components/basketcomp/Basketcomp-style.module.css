@@ -1,304 +1,303 @@
 .container {
-    margin: 50px 100px;
+  margin: 50px 100px;
 }
 
 .basket__content {
-    padding: 50px 0px;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
 }
 
 .basket__table {
-    width: 100%;
+  width: 100%;
 }
 
 .basket__card {
-    position: relative;
-    width: 100%;
-    padding: 15px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 90px;
-    border-top: 1px solid #D9D9D9;
+  position: relative;
+  width: 100%;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 90px;
+  border-top: 1px solid #d9d9d9;
 }
 
 .basket__card:last-child {
-    border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .info__cont {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .card__title h4 {
-    position: relative;
-    width: 100%;
-    font-weight: 500;
-    font-size: 16px;
-    color: #333333;
-    margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
 }
 
 .card__title_before::before {
-    content: 'товар';
-    position: absolute;
-    top: -55px;
-    left: 0;
-    font-weight: 500;
-    font-size: 12px;
-    color: #969696;
-    text-transform: uppercase;
+  content: "товар";
+  position: absolute;
+  top: -55px;
+  left: 0;
+  font-weight: 500;
+  font-size: 12px;
+  color: #969696;
+  text-transform: uppercase;
 }
 
 .card__title span {
-    font-weight: 400 !important;
-    font-size: 14px !important;
-    color: #B2B2B2 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #b2b2b2 !important;
 }
 
 .price__cont {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .price__cont span {
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    color: #333333;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
 }
 
 .span_before:nth-child(1)::before {
-    content: 'Цена';
+  content: "Цена";
+  position: absolute;
+  top: -79px;
+  left: 0;
+  font-weight: 500;
+  font-size: 12px;
+  color: #969696;
+  text-transform: uppercase;
+}
+
+.price__cont span:nth-child(2) {
+  color: #e53030;
+}
+
+.span_before:nth-child(2)::before {
+  content: "скидка";
+  position: absolute;
+  top: -79px;
+  left: 0;
+  font-weight: 500;
+  font-size: 12px;
+  color: #969696;
+  text-transform: uppercase;
+}
+
+.price__cont span:nth-child(3) {
+  font-weight: 700;
+}
+
+.span_before:nth-child(3)::before {
+  content: "итого";
+  position: absolute;
+  top: -79px;
+  left: 0;
+  font-weight: 500;
+  font-size: 12px;
+  color: #969696;
+  text-transform: uppercase;
+}
+
+.close {
+  transition: all 0.3s;
+}
+
+.close:hover {
+  transform: scale(1.4, 1.4);
+}
+
+.basket__btn {
+  padding: 20px 0px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basket__btn button {
+  padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  border-bottom: 1px dotted #000000;
+  cursor: pointer;
+}
+
+.basket__check {
+  width: 360px;
+  height: 390px;
+  padding: 32px;
+  background-color: #efeeee;
+}
+
+.basket__check h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.check__sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.check__sum span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+.blushing {
+  color: #e53030 !important;
+}
+
+.check__total {
+  padding: 14px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.check__total span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+}
+
+.check__delivery {
+  padding: 30px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.delivery__text {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000000;
+}
+
+.delivery__text span:last-child {
+  font-weight: 400;
+  font-size: 12px;
+  color: #969696;
+}
+
+@media (max-width: 1440px) {
+  .basket__content {
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .basket__card {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 50px;
+  }
+
+  .basket__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+
+  .price__cont span:nth-child(1)::before {
+    content: "Цена";
     position: absolute;
-    top: -79px;
-    left: 0;
+    top: -20px !important;
+    left: 0 !important;
     font-weight: 500;
     font-size: 12px;
     color: #969696;
     text-transform: uppercase;
-}
+  }
 
-.price__cont span:nth-child(2) {
-    color:#E53030;
-}
-
-.span_before:nth-child(2)::before {
-    content: 'скидка';
+  .price__cont span:nth-child(2)::before {
+    content: "скидка";
     position: absolute;
-    top: -79px;
-    left: 0;
+    top: -20px !important;
+    left: 0 !important;
     font-weight: 500;
-     font-size: 12px;
-     color: #969696;
-     text-transform: uppercase;
-}
-
-.price__cont span:nth-child(3) {
-    font-weight: 700;
-}
-
-.span_before:nth-child(3)::before {
-    content: 'итого';
-    position: absolute;
-    top: -79px;
-    left: 0;
-    font-weight: 500;
-     font-size: 12px;
-     color: #969696;
-     text-transform: uppercase;
-}
-
-
-.close {
-    transition: all .3s;
-}
-
-.close:hover {
-    transform: scale(1.4, 1.4);
-}
-
-.basket__btn {
-    padding: 20px 0px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.basket__btn button{
-    padding-bottom: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #333333;
-    border-bottom: 1px dotted #000000;
-    cursor: pointer;
-}
-
-.basket__check {
-    width: 360px;
-    height: 390px;
-    padding: 32px;
-    background-color: #efeeee;
-}
-
-.basket__check h3 {
-    font-weight: 500;
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.check__sum {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.check__sum span {
-    font-weight: 500;
-    font-size: 14px;
-    color: #000000;
-}
-
-.blushing {
-    color: #E53030 !important;
-}
-
-.check__total {
-    padding: 14px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #D9D9D9;
-    border-bottom: 1px solid #D9D9D9;
-}
-
-.check__total span {
-    font-weight: 700;
-    font-size: 16px;
-    color: #333333;
-}
-
-.check__delivery {
-    padding: 30px 0px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.delivery__text {
-    width: 170px;
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 12px;
-    color: #000000;
-}
-
-.delivery__text span:last-child {
-    font-weight: 400;
     font-size: 12px;
     color: #969696;
-}
+    text-transform: uppercase;
+  }
 
-@media (max-width: 1440px) {
-    .basket__content {
-        align-items: center;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-}
+  .price__cont span:nth-child(3)::before {
+    content: "итого";
+    position: absolute;
+    top: -20px !important;
+    left: 0 !important;
+    font-weight: 500;
+    font-size: 12px;
+    color: #969696;
+    text-transform: uppercase;
+  }
 
-@media (max-width: 1140px) {
-    .basket__card {
-        column-gap: 30px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {
-        margin: 50px;
-    }
-
-    .basket__card {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        row-gap: 40px;
-    }
-
-    .price__cont span:nth-child(1)::before {
-        content: 'Цена';
-        position: absolute;
-        top: -20px !important;
-        left: 0 !important;
-        font-weight: 500;
-        font-size: 12px;
-        color: #969696;
-        text-transform: uppercase;
-    }
-
-    .price__cont span:nth-child(2)::before {
-        content: 'скидка';
-        position: absolute;
-        top: -20px !important;
-        left: 0 !important;
-        font-weight: 500;
-        font-size: 12px;
-        color: #969696;
-        text-transform: uppercase;
-    }
-
-    .price__cont span:nth-child(3)::before {
-        content: 'итого';
-        position: absolute;
-        top: -20px !important;
-        left: 0 !important;
-        font-weight: 500;
-        font-size: 12px;
-        color: #969696;
-        text-transform: uppercase;
-    }
-
-    .close {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0, -50%)
-    }
+  .close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
 }
 
 @media (max-width: 450px) {
-    .container {
-        margin: 10px;
-    }
+  .container {
+    margin: 10px;
+  }
 
-    .info__cont {
-        flex-direction: column;
-    }
+  .info__cont {
+    flex-direction: column;
+  }
 
-    .card__title_before::before {
-        display: none;
-    }
+  .card__title_before::before {
+    display: none;
+  }
 
-    .price__cont {
-        flex-wrap: wrap;
-        row-gap: 25px;
-    }
+  .price__cont {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
 
-    .basket__check {
-        width: 100%;
-        height: 300px;
-        padding: 32px;
-        background-color: #efeeee;
-    }
+  .basket__check {
+    width: 100%;
+    height: 300px;
+    padding: 32px;
+    background-color: #efeeee;
+  }
 }
