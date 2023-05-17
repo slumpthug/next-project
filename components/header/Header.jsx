@@ -7,7 +7,7 @@ import React, { useRef, useState } from 'react';
 import BurgerModal from '../burger-modal/BurgerModal';
 
 
-const Header = ({setCatalog}) => {
+const Header = () => {
 
     const searchRef = useRef(null);
 
@@ -52,7 +52,7 @@ const Header = ({setCatalog}) => {
                     <Image className={css.basket} src={basket} alt="basket" />
                     <span>Корзина</span>
                 </a>
-                <BurgerModal setCatalog={setCatalog} isOpen={isModalOpen} onClose={handleCloseModal} />
+                <BurgerModal isOpen={isModalOpen} onClose={handleCloseModal} />
             </div>
         </div>
     );
