@@ -35,7 +35,6 @@ const Header = () => {
     const handleCloseModal = () => {
       setIsModalOpen(false);
     };
-    
 
     return (
         <div className={css.header}>
@@ -51,6 +50,7 @@ const Header = () => {
                 <a className={css.user_link} href='/basket'>
                     <Image className={css.basket} src={basket} alt="basket" />
                     <span>Корзина</span>
+                    <span>3</span>
                 </a>
                 <BurgerModal isOpen={isModalOpen} onClose={handleCloseModal} />
             </div>

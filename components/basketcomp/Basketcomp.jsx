@@ -6,7 +6,6 @@ import ticket from '../../public/basket/ticket.svg';
 import boots from '../../public/basket/boots.png';
 import close from '../../public/basket/close.svg';
 import cdek from '../../public/basket/cdek.svg';
-import MainButtonTwo from '../main-button-two/MainButtonTwo';
 
 const Basketcomp = () => {
     return (
