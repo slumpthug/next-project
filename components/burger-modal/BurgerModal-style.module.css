@@ -91,6 +91,25 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
+.burgerModal__card_active {
+    pointer-events: none;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 160px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 20px;
+    background: url(../../public/burger-modal/moda.jpg) no-repeat;
+    opacity: .7;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+}
+
 .close {
     display: none;
 }
