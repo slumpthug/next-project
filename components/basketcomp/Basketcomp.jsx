@@ -20,7 +20,7 @@ const Basketcomp = ({ item }) => {
                                     <h4 className={css.card__title_before}>{item.title}</h4>
                                     <span>Размер: {item.size}</span>
                                 </div>
-                            </div>
+                            </div>  
                             <div className={css.price__cont}>
                                 <span className={css.span_before}>{item.price}</span>
                                 <span className={css.span_before}>{item.skidka}</span>
@@ -59,11 +59,7 @@ const Basketcomp = ({ item }) => {
                                 <span>Доставка в случае отказа <br /> 1 500 руб.</span>
                             </div>
                         </div>
-<<<<<<< HEAD
                         <MainButtonTwo text='оформить заказ' />
-=======
-                        <MainButtonTwo link='/decor' text='оформить заказ'/>
->>>>>>> 2f3b97c21aa311438f6fd5e98f303a28f431e567
                     </div>
                 </div>
                 <Privilege />

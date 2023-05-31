@@ -22,10 +22,6 @@ import DeliveryModal from "../delivery-modal/DeliveryModal";
 
 const Productcomp = ({ item }) => {
 
-  const handleClick = () => {
-    addToCart({ item });
-  };
-
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -94,7 +90,7 @@ const Productcomp = ({ item }) => {
             </div>
             <div className={css.product__buttons}>
               <MainButtonTwo text='в корзину' />
-              <MainButtonTwo text='быстрый заказ' onClick={handleClick} />
+              <MainButtonTwo text='быстрый заказ' onClick={handleOpenModal} />
             </div>
             <DeliveryModal isOpen={isModalOpen} onClose={handleCloseModal} />
             <div className={css.product__description}>

@@ -9,17 +9,6 @@
 }
 
 .container {
-<<<<<<< HEAD
-  width: 880px;
-  position: relative;
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 30px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 65px rgba(0, 0, 0, 0.2);
-=======
     width: 880px;
     position: relative;
     padding: 30px;
@@ -32,7 +21,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
->>>>>>> 2f3b97c21aa311438f6fd5e98f303a28f431e567
 }
 
 .deliveryModal__card {
@@ -165,20 +153,9 @@
     text-align: center;
   }
 
-<<<<<<< HEAD
   .deliveryModal__order span {
     width: 100%;
   }
-=======
-    .deliveryModal__order span {
-        width: 100%;
-    }
-
-    .DeliveryModal__close {
-        right: 0px;
-        top: 0px;
-    }
->>>>>>> 2f3b97c21aa311438f6fd5e98f303a28f431e567
 }
 
 @media (max-width: 380px) {

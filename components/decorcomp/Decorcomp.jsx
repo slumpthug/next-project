@@ -121,7 +121,7 @@ const Decorcomp = () => {
                                 <input type="text" placeholder='Фамилия *'
 
                                     name="lastName"
-                                    value={formData.lastName}
+                                    value={formData.lastName}я
                                     onChange={handleInputChange}
                                 />
                                 {errors.lastName && <span className={css.errors}>{errors.lastName}</span>}
@@ -252,7 +252,7 @@ const Decorcomp = () => {
                                 <p>Оплата осуществляется курьеру СДЭК картой или наличными. <span>Оплата после примерки.</span></p>
                             </div>
                         </div>
-                        <MainButtonTwo text='ПОДТВЕРДИТЬ заказ' />
+                        <MainButtonTwo  text='ПОДТВЕРДИТЬ заказ' />
                     </div>
                 </div>
                 <Privilege />
