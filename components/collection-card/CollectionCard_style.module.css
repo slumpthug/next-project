@@ -1,5 +1,4 @@
 .collection__card {
-<<<<<<< HEAD
     width: 320px;
     height: 100%;
     text-align: center;
@@ -8,11 +7,6 @@
 
 .collection__card:hover {
     background-color: rgba(131, 131, 131, 0.1);
-=======
-  width: 320px;
-  height: 100%;
-  text-align: center;
->>>>>>> origin/feature/aziz
 }
 
 .man {

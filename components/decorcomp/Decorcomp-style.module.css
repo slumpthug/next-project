@@ -2,19 +2,6 @@
   margin: 50px 100px;
 }
 
-<<<<<<< HEAD
-=======
-.errors {
-  color: red;
-  font-size: 14px;
-}
-
-.input_and_error {
-  display: flex;
-  flex-direction: column;
-}
-
->>>>>>> origin/feature/aziz
 .decor__content {
   display: flex;
   justify-content: space-between;
@@ -103,7 +90,6 @@
   width: 100%;
 }
 
-<<<<<<< HEAD
 .decorcomp__address .even__inputs:nth-child(2) {
     margin-bottom: 20px;
 }
@@ -139,17 +125,6 @@
     font-size: 12px;
 }
 
-=======
-.uneven__inputs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 20px;
-  margin-bottom: 15px;
-  width: 100%;
-}
-
->>>>>>> origin/feature/aziz
 .decor__check {
   width: 600px;
   height: 100%;
@@ -265,7 +240,6 @@
   color: #969696;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1400px) { 
     .decor__inputs_part {
         display: flex;
@@ -303,22 +277,6 @@
         row-gap: 20px;
         flex-direction: column;
     }
-=======
-@media (max-width: 1050px) {
-  .decor__content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 40px;
-    margin-bottom: 50px;
-  }
-
-  .decor__inputs_part {
-    width: 100%;
-  }
->>>>>>> origin/feature/aziz
 }
 
 @media (max-width: 1000px) {
@@ -336,25 +294,16 @@
     text-align: center;
   }
 
-<<<<<<< HEAD
     .even__inputs {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
     }
-=======
-  .even__inputs {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  }
->>>>>>> origin/feature/aziz
 
   .even__inputs input {
     width: 100%;
   }
 
-<<<<<<< HEAD
     .uneven__inputs {
         flex-direction: column;
         row-gap: 10px;
@@ -367,17 +316,6 @@
     .uneven__inputs input:last-child {
         width: 100%;
     }
-=======
-  .delivery__part {
-    flex-direction: column;
-  }
-
-  .checkbox__cont {
-    align-items: flex-start;
-    row-gap: 10px;
-    flex-direction: column;
-  }
->>>>>>> origin/feature/aziz
 
   .uneven__inputs {
     flex-direction: column;
@@ -388,7 +326,6 @@
     width: 100%;
   }
 
-<<<<<<< HEAD
     .card__ptice {
         width: 70px;
     }
@@ -418,21 +355,3 @@
         top: 0;
     }
 }
-=======
-  .uneven__inputs input:last-child {
-    width: 100%;
-  }
-
-  .decor__check {
-    width: 100%;
-  }
-
-  .card__title h4 {
-    width: 100%;
-  }
-
-  .card__ptice {
-    width: 70px;
-  }
-}
->>>>>>> origin/feature/aziz

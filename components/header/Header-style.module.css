@@ -7,14 +7,9 @@
 }
 
 .burgerMenu_link {
-<<<<<<< HEAD
     width: 28px;
     height: 28px;
     cursor: pointer;
-=======
-  width: 28px;
-  height: 28px;
->>>>>>> origin/feature/aziz
 }
 
 .burgerMenu {
@@ -48,33 +43,11 @@
   color: #b2b2b2;
 }
 
-<<<<<<< HEAD
-=======
-.links__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 10px;
-}
-
-.user_link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.box {
-  width: 24px;
-  height: 24px;
-}
-
->>>>>>> origin/feature/aziz
 .basket {
   width: 24px;
   height: 24px;
 }
 
-<<<<<<< HEAD
 .user_link {
     position: relative;
     display: flex;
@@ -104,35 +77,6 @@
 
 .user_link:hover span:nth-child(2) {
     text-decoration: underline;
-=======
-.user_link:last-child {
-  position: relative;
-}
-
-.user_link:last-child::before {
-  content: "0";
-  padding: 0px 2px 4px 2px;
-  position: absolute;
-  right: 11px;
-  bottom: 16px;
-  display: block;
-  font-size: 12px;
-  width: 12px;
-  height: 12px;
-  background-color: #e53030;
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-}
-
-.user_link span {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.user_link:hover span {
-  text-decoration: underline;
->>>>>>> origin/feature/aziz
 }
 
 @media (max-width: 1400px) {
@@ -152,7 +96,6 @@
     display: none;
   }
 
-<<<<<<< HEAD
     .user_link span {
         display: none;
     }
@@ -162,18 +105,3 @@
         bottom: -1px;
     }
 }
-=======
-  .user_link:first-child {
-    display: none;
-  }
-
-  .user_link span {
-    display: none;
-  }
-
-  .user_link:last-child::before {
-    right: -5px;
-    bottom: -1px;
-  }
-}
->>>>>>> origin/feature/aziz

@@ -6,7 +6,6 @@
   border-bottom: 1px solid #000000;
 }
 
-<<<<<<< HEAD
 .container span {
     font-weight: 600;
     font-size: 14px;
@@ -37,36 +36,6 @@
 
 .container a:hover::before {
     width: 100%;
-=======
-.container a {
-  font-weight: 600;
-  font-size: 14px;
-  color: #969696;
-  text-transform: uppercase;
-  cursor: auto;
-}
-
-.container a:first-child {
-  position: relative;
-  color: #333333;
-  cursor: pointer;
-}
-
-.container a:first-child::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0px;
-  height: 1.5px;
-  background-color: #333333;
-  transition: all 0.3s;
-}
-
-.container a:first-child:hover::before {
-  width: 100%;
->>>>>>> origin/feature/aziz
 }
 
 @media (max-width: 1400px) {
