@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Footer-style.module.css';
-import Image from 'next/image'; 
+import Image from 'next/image';
 import logo from '../../public/header/logo.svg';
 import label from '../../public/footer/label.svg';
 import instagram from '../../public/footer/instagram.svg';
@@ -11,7 +11,7 @@ const Footer = () => {
         <div id='1' className={css.footer}>
             <div className={css.container}>
                 <div className={css.footer__info}>
-                    <Image className={logo} src={logo} alt="companys logo"/>
+                    <Image className={logo} src={logo} alt="companys logo" />
                     <p>INTEFRA - российская платформа, на которой объединены ведущие итальянские бренды одежды, обуви и аксессуаров.</p>
                     <span>INTEFRA.RU - c 2012 года - 100% оригинальные товары</span>
                 </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className={css.footer__address}>
                         <div>
                             <h6>Офис в России</h6>
-                            <a href='https://go.2gis.com/gy5cq'>Москва, Кутузовский пр. 2 <br/> Санкт-Петербург, Большой проспект П.С. 13</a>
+                            <a href='https://go.2gis.com/gy5cq'>Москва, Кутузовский пр. 2 <br /> Санкт-Петербург, Большой проспект П.С. 13</a>
                         </div>
                         <Image className={css.label} src={label} alt="label" />
                     </div>

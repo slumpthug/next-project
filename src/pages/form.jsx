@@ -7,10 +7,10 @@ import Formcomp from '../../components/formcomp/Formcomp';
 const form = () => {
     return (
         <div>
-            <Header/>
-            <BottomHeader text='образ'/>
-            <Formcomp/>
-            <Footer/>
+            <Header />
+            <BottomHeader text='образ' />
+            <Formcomp />
+            <Footer />
         </div>
     );
 };

@@ -1,4 +1,5 @@
 .collection__card {
+<<<<<<< HEAD
     width: 320px;
     height: 100%;
     text-align: center;
@@ -7,25 +8,30 @@
 
 .collection__card:hover {
     background-color: rgba(131, 131, 131, 0.1);
+=======
+  width: 320px;
+  height: 100%;
+  text-align: center;
+>>>>>>> origin/feature/aziz
 }
 
 .man {
-    width: 100%;
-    height: 430px;
-    object-fit: cover;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
 }
 
 .collection__card p {
-    padding: 30px 10px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #414141;
+  padding: 30px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #414141;
 }
 
 @media (max-width: 500px) {
-    .collection__card {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
+  .collection__card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
 }

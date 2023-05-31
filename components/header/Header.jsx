@@ -4,7 +4,10 @@ import burgerMenu from '../../public/header/burger.svg';
 import logo from '../../public/header/logo.svg';
 import basket from '../../public/header/basket.svg';
 import React, { useRef, useState } from 'react';
+<<<<<<< HEAD
 import BurgerModal from '../burger-modal/BurgerModal';
+=======
+>>>>>>> origin/feature/aziz
 
 
 const Header = () => {
@@ -26,6 +29,7 @@ const Header = () => {
     };
 
 
+<<<<<<< HEAD
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleOpenModal = () => {
@@ -35,6 +39,19 @@ const Header = () => {
     const handleCloseModal = () => {
       setIsModalOpen(false);
     };
+=======
+
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleKeyPress = (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // Отменить стандартное поведение формы
+        handleSearch();
+      }
+    };
+
+
+>>>>>>> origin/feature/aziz
 
     return (
         <div className={css.header}>
@@ -45,7 +62,18 @@ const Header = () => {
                 <a className={css.logo_link} href='#'>
                     <Image className={css.logo} src={logo} alt="companys logo" />
                 </a>
+<<<<<<< HEAD
                 <input type="text" placeholder='Поиск по продукции' className={css.search} ref={searchRef} />
+=======
+
+                <input type="text" 
+                className={css.search} 
+                ref={searchRef} 
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+                onKeyPress={handleKeyPress}
+                />
+>>>>>>> origin/feature/aziz
                 <button type="submit" onClick={handleSearch}>Search</button>
                 <a className={css.user_link} href='/basket'>
                     <Image className={css.basket} src={basket} alt="basket" />

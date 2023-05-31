@@ -1,18 +1,18 @@
 .mainButtonTwo {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding: 16px 40px;
-    background-color: #000;
-    font-weight: 700;
-    font-size: 13px;
-    color: #FFFFFF;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all .3s;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 16px 40px;
+  background-color: #000;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
 }
 
 .mainButtonTwo:hover {
-    color: #000;
-    background-color: #d0d0d0;
+  color: #000;
+  background-color: #d0d0d0;
 }

@@ -90,14 +90,14 @@ const Novelties = () => {
                         grabCursor={true}
                         effect={"creative"}
                         creativeEffect={{
-                          prev: {
-                            shadow: true,
-                            translate: ["-120%", 0, -500],
-                          },
-                          next: {
-                            shadow: true,
-                            translate: ["120%", 0, -500],
-                          },
+                            prev: {
+                                shadow: true,
+                                translate: ["-120%", 0, -500],
+                            },
+                            next: {
+                                shadow: true,
+                                translate: ["120%", 0, -500],
+                            },
                         }}
                         modules={[EffectCreative]}
                         className="mySwiper2"
@@ -152,7 +152,7 @@ const Novelties = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <MainButton text='смотреть все'/>
+                <MainButton text='смотреть все' />
             </div>
         </div>
     );

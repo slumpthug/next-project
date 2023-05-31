@@ -7,10 +7,10 @@ import Assemblagecomp from '../../components/assemblagecomp/Assemblagecomp';
 const assemblage = () => {
     return (
         <div>
-            <Header/>
+            <Header />
             <BottomHeader text='Коллекция' />
-            <Assemblagecomp/>
-            <Footer/>
+            <Assemblagecomp />
+            <Footer />
         </div>
     );
 };

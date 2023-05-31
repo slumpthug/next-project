@@ -56,6 +56,7 @@ const Assemblagecomp = () => {
                     <button onClick={() => setCategory(3)}>по цене</button>
                 </div>
                 <div className={css.assemblagecomp__wrapper}>
+<<<<<<< HEAD
                     {card.filter(item => item.cat == category ).map( item => {
                         return (
                             <>
@@ -70,8 +71,20 @@ const Assemblagecomp = () => {
                             </>
                         )
                     })}
+=======
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+>>>>>>> origin/feature/aziz
                 </div>
-                <Privilege/>
+                <Privilege />
             </div>
         </div>
     );
