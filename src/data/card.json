@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Saint",
+        "proprice": "96 000 ₽",
+        "price": "123 000 ₽",
+        "cat": 1
+    },
+    {
+        "id": 2,
+        "title": "Saint",
+        "proprice": "96 000 ₽",
+        "price": "123 000 ₽",
+        "cat": 1
+    },
+    {
+        "id": 3,
+        "title": "Saint",
+        "proprice": "96 000 ₽",
+        "price": "123 000 ₽",
+        "cat": 1
+    },
+    {
+        "id": 1,
+        "title": "Sanjar loh",
+        "proprice": "96 000 ₽",
+        "price": "123 000 ₽",
+        "cat": 2
+    },
+    {
+        "id": 2,
+        "title": "Sanjar loh",
+        "proprice": "96 000 ₽",
+        "price": "123 000 ₽",
+        "cat": 2
+    }
+]

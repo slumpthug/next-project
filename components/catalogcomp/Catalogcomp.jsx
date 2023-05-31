@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { selectCards } from '@/redux/basketSlice';
 import css from './Catalogcomp-style.module.css';
 import Image from 'next/image';
 import boots from '../../public/kinds/boots.png';
@@ -71,56 +73,7 @@ const Catalogcomp = () => {
         },
     ]
 
-    const cardsTwo = [
-        {
-            id: 1,
-            title: 'Saint Laurent',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 1,
-            title: 'Saint Laurent',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 1,
-            title: 'Saint Laurent',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 1,
-            title: 'Saint Laurent',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 2,
-            title: 'Saint',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 2,
-            title: 'Saint',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 2,
-            title: 'Saint',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-        {
-            id: 2,
-            title: 'Saint',
-            proprice: '96 000 ₽',
-            price: '123 000 ₽',
-        },
-    ]
+    const cardsSelected = useSelector(selectCards);
 
     return (
         <div className={css.catalog}>
@@ -151,7 +104,7 @@ const Catalogcomp = () => {
                     })}
                 </div>
                 <div className={css.catalog__wrapper_two}>
-                    {cardsTwo.filter(item => item.id == catalog).map(item => {
+                    {cardsSelected.filter(item => item.cat == catalog).map(item => {
                         return (
                             <>
                                 <MainCard img={bag} title={item.title} proprice={item.proprice} price={item.price}/>
