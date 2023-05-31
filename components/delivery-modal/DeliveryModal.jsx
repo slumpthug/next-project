@@ -62,7 +62,7 @@ const DeliveryModal = ({ isOpen, onClose }) => {
 
     if (!isOpen) {
         return null; // Если модальное окно закрыто, возвращаем null, чтобы ничего не отображать
-      }
+    }
 
 
     return (
@@ -85,13 +85,13 @@ const DeliveryModal = ({ isOpen, onClose }) => {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange} />
-                    {errors.name && <span style={{color: 'red'}}>{errors.name}</span>}
+                    {errors.name && <span style={{ color: 'red' }}>{errors.name}</span>}
 
-                    <input type="text" placeholder='Телефон' 
-                    name="phone"
+                    <input type="text" placeholder='Телефон'
+                        name="phone"
                         value={formData.phone}
                         onChange={handleInputChange} />
-                    {errors.phone && <span style={{color: 'red'}}>{errors.phone}</span>}
+                    {errors.phone && <span style={{ color: 'red' }}>{errors.phone}</span>}
 
                     <MainButtonTwo text='купить' />
                     <span>

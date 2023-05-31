@@ -16,35 +16,51 @@ const Collection = () => {
             <div className={css.container}>
                 <h1>КОЛЛЕКЦИЯ</h1>
                 <div className={css.collection__wrapper}>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
-                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+<<<<<<< HEAD
+                    <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                    <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                    <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+=======
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                    <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+>>>>>>> origin/feature/aziz
                 </div>
                 <div className={css.collection__slider}>
                     <Swiper
                         grabCursor={true}
                         effect={"creative"}
                         creativeEffect={{
-                          prev: {
-                            shadow: true,
-                            translate: ["-120%", 0, -500],
-                          },
-                          next: {
-                            shadow: true,
-                            translate: ["120%", 0, -500],
-                          },
+                            prev: {
+                                shadow: true,
+                                translate: ["-120%", 0, -500],
+                            },
+                            next: {
+                                shadow: true,
+                                translate: ["120%", 0, -500],
+                            },
                         }}
                         modules={[EffectCreative]}
                         className="mySwiper2"
                     >
                         <SwiperSlide>
-                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+<<<<<<< HEAD
+                            <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>  
+                            <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>  
                         </SwiperSlide>
                         <SwiperSlide>
-                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+                            <CollectionCard link='/form' text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man}/>
+=======
+                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <CollectionCard text='Спортивный костюм Artigiani, футболка Artigiani, кеды Santoni' img={man} />
+>>>>>>> origin/feature/aziz
                         </SwiperSlide>
                     </Swiper>
                 </div>

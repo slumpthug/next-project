@@ -1,26 +1,37 @@
 .container {
-    padding: 70px 100px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
+  padding: 70px 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
 }
 
 .assemblagecomp__filter {
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
 }
 
+<<<<<<< HEAD
+.assemblagecomp__filter button {
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.assemblagecomp__filter button:hover{
+    text-decoration: underline;
+=======
 .assemblagecomp__filter span {
-    font-weight: 400;
-    font-size: 16px;
-    color: #969696;
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+>>>>>>> origin/feature/aziz
 }
 
 .assemblagecomp__wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
